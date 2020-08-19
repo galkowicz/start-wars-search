@@ -1,0 +1,9 @@
+.list-item {
+  cursor: pointer;
+  &:hover {
+    background-color: #61dafb;
+  }
+  &.selected {
+    background-color: greenyellow;
+  }
+}

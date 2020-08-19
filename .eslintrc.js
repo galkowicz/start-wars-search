@@ -36,6 +36,7 @@ module.exports = {
         endOfLine: 'auto',
       },
     ],
-    "react/prop-types": "off"
+    'react/prop-types': 'off',
+    'no-empty': ['error', { allowEmptyCatch: true }],
   },
 }
