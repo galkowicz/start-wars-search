@@ -8,7 +8,7 @@ export const fetchAllPeople = async (url: string): Promise<any> => {
   const response = await fetch(url)
   const { results, next } = await response.json()
   accumulatedResults.push(...results)
-  return fetchAllPeople(next)
+  return fetchAllPeople(next && next.replace('http', 'https'))
 }
 
 export const fetchShips = async (shipsUrl: string[]): Promise<any> => {
